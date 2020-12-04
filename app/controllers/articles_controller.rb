@@ -12,7 +12,7 @@ before_action :set_article, only: [:show, :edit, :update]
   def new
     @article = Article.new
   end
-  
+
   def create
     @article = Article.new(article_params)
     if @article.save
