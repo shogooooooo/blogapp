@@ -47,7 +47,7 @@ before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destro
 
   private
   def article_params
-    params.require(:article).permit(:title, :content)
+    params.require(:article).permit(:title, :content, :eyecatch)
   end
 
   def set_article
