@@ -5,4 +5,3 @@ class RelationshipMailer < ApplicationMailer
     mail to: user.email, subject: '【お知らせ】 フォローされました'
   end
 end
-

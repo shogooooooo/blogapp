@@ -14,7 +14,7 @@ RSpec.describe Article, type: :model do
   context 'タイトルの文字が一文字の場合' do
     let!(:article) { build(:article, title: Faker::Lorem.characters(number: 1), user: user)}
 
-    before do 
+    before do
       article.save
     end
 
