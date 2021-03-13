@@ -19,7 +19,7 @@ class Apps::ProfilesController < Apps::ApplicationController
     end
   end
 
-  private 
+  private
   def profile_params
     params.require(:profile).permit(
       :nickname,
@@ -30,6 +30,5 @@ class Apps::ProfilesController < Apps::ApplicationController
       :avatar
     )
   end
-
 
 end
